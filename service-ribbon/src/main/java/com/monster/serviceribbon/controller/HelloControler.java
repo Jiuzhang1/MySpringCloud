@@ -16,6 +16,7 @@ public class HelloControler {
 
     @GetMapping(value = "/hi")
     public String hi(@RequestParam String name) {
+        logger.info("This is monster branch!");
         return helloService.sayHi(name);
     }
 }
