@@ -16,7 +16,6 @@ public class HelloControler {
 
     @GetMapping(value = "/hi")
     public String hi(@RequestParam String name) {
-        logger.debug("Hellow world!");
         return helloService.sayHi(name);
     }
 }
